@@ -4,6 +4,7 @@ using namespace std;
 
 int main() {
 	cout << "Instructions: enter the name of the vehicle and the revenue will be calculated." << endl << "Enter \"Exit\" to quit the program." << endl << "Enter \"print\" to show the report." << endl;
+	cout << "You may enter \"list\" to view valid vehicle names." << endl;
 	
 	string input;
 
@@ -71,6 +72,13 @@ int main() {
 		else if (input == "TruckTen" || input == "AgriMachineTen") {
 			totalToll += 10;
 			tenWheeler++;
+		}
+
+		else if (input == "list") {
+			cout << "Two wheelers: Cycle, ElectricScooty, Motor, ElectricCycle" << endl;
+			cout << "Four wheelers: Car, SUV, Crossover, Van, Pickup, Minibus, Minivan, Campervan, Tractor, AgriMachine" << endl;
+			cout << "Six wheelers: Bus, Coach, VanFive, Truck, Lorry" << endl;
+			cout << "Ten or more wheelers: TruckTen, AgriMachineTen" << endl;
 		}
 
 		else
